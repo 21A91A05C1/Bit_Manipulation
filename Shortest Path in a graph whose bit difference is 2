@@ -1,0 +1,52 @@
+Shortest path
+Program Description :
+The shortest path length between two given nodes such that adjacent nodes are at bit difference 2
+
+Given an Unweighted and Undirected graph consisting of N nodes and two integers a and b. The edge between any two nodes exists only if thebit difference between them is 2, the task is to find the length of the shortest Path between nodes a and b. If a path does not exist between the nodes a and b, then print -1. 
+
+Input Format :
+First line contains three integers N , a and b. 
+
+Output Format :
+Print the shortest path if exits otherwise print -1. 
+
+Input :
+15 15 3
+
+
+Output :
+1
+
+
+
+
+
+
+
+
+
+//code
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,a,b;
+    cin>>n>>a>>b;
+    int x=0;
+    for(int i=0;i<32;i++)
+    {
+        if(a&(1<<i)^(b&(1<<i)))
+        {
+            x++;
+        }
+    }
+    if(x%2==0)
+    {
+        cout<<x/2;
+    }
+    else 
+    {
+        cout<<-1;
+    }
+}
