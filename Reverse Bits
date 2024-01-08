@@ -3,7 +3,7 @@ Program Description :
 In the digital realm of Binaryland, an ancient script has been discovered that can only be deciphered by reversing
 the binary representation of a 32-bit number. Your mission is to implement a program that takes a 32-bit integer, reverses its binary form, and then prints the result in decimal.
 
-Input Format :
+Input Format :  
 The input consists of a single 32-bit integer, denoted as X.
 
 Output Format :
