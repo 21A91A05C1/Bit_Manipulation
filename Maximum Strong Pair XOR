@@ -7,7 +7,7 @@ You need to select two integers from nums such that they form a strong pair and 
 
 Print the maximum XOR value out of all possible strong pairs in the array nums.
 
-Note that you can pick the same integer twice to form a pair.
+Note that you can pick the same integer twice to form a pair.  
 
 Input Format :
 First Line Consists of Array Length.
