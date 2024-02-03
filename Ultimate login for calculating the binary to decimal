@@ -1,0 +1,29 @@
+---> 1 1 1 0
+//
+from back
+int mod=1e9+7;
+long long unsigned int decimalValue(Node *head)
+{
+     Node* temp=head;
+     long long unsigned int c=0;
+     while(head->next)
+     {
+        int i=head->data;
+        c=((c+i)*2)%mod;
+        head=head->next;
+      }
+      int m=head->data;
+      c+=m;
+      return c%mod;
+}
+
+
+from front
+//1 0 0 1 0 1
+int power=1;
+int sum=0;
+
+sum=sum+(power*number)
+power*=2
+
+cout<<sum<<" ";
