@@ -16,3 +16,19 @@ void swapNumber(int &a, int &b) {
 	a=a^b;
 	
 }
+
+Count number of bits to be flipped to convert A to B
+
+int minBitFlips(int start, int goal) {
+        int ans=start^goal;
+        int c=0;
+        // cout<<ans<<" ";
+        while(ans>1)
+        {
+            if(ans&1) c++;
+            ans=ans>>1;
+            // cout<<ans<<" ";
+        }
+        if(ans==1) c++;
+        return c;
+    }
