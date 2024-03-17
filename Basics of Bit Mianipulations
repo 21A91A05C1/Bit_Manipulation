@@ -1,0 +1,18 @@
+converting the decimal to binary number
+
+
+toggling
+
+clearing the bit
+
+removing the right most bit from number
+
+
+swap two numbers
+void swapNumber(int &a, int &b) {
+	// Write your code here.
+	a=a^b;
+	b=a^b;
+	a=a^b;
+	
+}
